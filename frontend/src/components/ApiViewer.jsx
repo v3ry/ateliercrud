@@ -42,6 +42,7 @@ function ApiViewer() {
       .catch((error) =>
         console.warn(`Authorization failed : ${error.message}`)
       );
+    setRefresh(!refresh);
   };
 
   const handleEdit = (e, index, id) => {
@@ -55,6 +56,14 @@ function ApiViewer() {
     tit.value = articles[index].title;
     img.value = articles[index].img;
     des.value = articles[index].descr;
+    setMyArticles({
+      ...myArticles,
+      title: articles[index].title,
+      img: articles[index].img,
+      descr: articles[index].descr,
+    });
+    // setMyArticles({ ...myArticles, img: articles[index].img });
+    // setMyArticles({ ...myArticles, descr: articles[index].descr });
     // setMyArticles({ ...myArticles, title: e.target.value });
   };
 

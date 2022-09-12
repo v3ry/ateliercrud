@@ -1,3 +1,4 @@
+/* eslint-disable import/no-unresolved */
 import ApiViewer from "@components/ApiViewer";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import "bootstrap/dist/css/bootstrap.min.css";

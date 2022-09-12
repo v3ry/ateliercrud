@@ -1,0 +1,19 @@
+.zone {
+  background-color: bisque;
+  margin: 3%;
+  padding: 1rem;
+  padding-left: 2rem;
+  border-radius: 11px;
+  list-style: lower-greek;
+}
+
+.zone li {
+  margin: 1rem;
+}
+li img {
+  width: 100px;
+}
+
+.desc {
+  text-align: left;
+}
